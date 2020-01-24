@@ -1,0 +1,79 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Give You Glory";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Utility */
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  background: #ea5635;
+  color: #fff;
+  font-size: 1.125rem;
+  font-family: "Open sans", sans-serif;
+  padding: 0 28px;
+  text-decoration: none;
+  text-shadow: 0.1875rem 0.1875rem 0.625rem rgba(0, 0, 0, 0.6);
+}
+
+/* Navigation */
+
+.main-header {
+  display: flex;
+  position: sticky;
+  background: #fff;
+  color: #ea5635;
+}
+
+.top-right {
+  align-items: flex-end;
+}
+
+.main-header a {
+  display: flex;
+  color: #4a4a4a;
+}
+
+.main-header .btn {
+  color: #fff;
+}
+
+.main-nav {
+  display: flex;
+}
+
+/* Showcase */
+
+.showcase {
+  padding: 2rem;
+  background: url("/img/1189123-bslf-small.jpg.rendition.380.380.jpg") no-repeat
+    center center/cover;
+}
