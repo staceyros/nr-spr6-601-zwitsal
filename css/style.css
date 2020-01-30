@@ -2,6 +2,15 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 980px;
+  align-content: center;
+}
+
+body {
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 1100px;
 }
 
 h1,
@@ -13,6 +22,13 @@ h6 {
   font-family: "Give You Glory";
 }
 
+h2 {
+  text-align: center;
+  color: #ea5635;
+  font-size: 45.5px;
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
 }
@@ -22,6 +38,8 @@ ul {
 }
 
 p {
+  font-family: "Open Sans";
+  color: #4a4a4a;
   margin: 0.5rem 0;
 }
 
@@ -39,35 +57,72 @@ img {
   color: #fff;
   font-size: 1.125rem;
   font-family: "Open sans", sans-serif;
-  padding: 0 28px;
+  padding: 1rem 2rem;
   text-decoration: none;
   text-shadow: 0.1875rem 0.1875rem 0.625rem rgba(0, 0, 0, 0.6);
 }
 
+.text-center {
+  justify-content: center;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.card p {
+  color: #747474;
+  font-family: "Open Sans";
+  font-size: 12.25px;
+}
+
 /* Navigation */
 
-.main-header {
+.main-nav {
   display: flex;
   position: sticky;
+  top: 0;
+  z-index: 1;
   background: #fff;
+  overflow: auto;
   color: #ea5635;
+  margin: auto;
 }
 
 .top-right {
-  align-items: flex-end;
+  display: flex;
+  justify-content: right;
 }
 
-.main-header a {
+.top-right a {
   display: flex;
   color: #4a4a4a;
 }
 
-.main-header .btn {
+.top-right p {
+  display: flex;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu .btn {
   color: #fff;
 }
 
-.main-nav {
+.nav-menu img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-menu ul {
   display: flex;
+  color: #ea5635;
+  font-family: "Open Sans";
+  padding: 1rem;
+  justify-content: space-evenly;
 }
 
 /* Showcase */
@@ -76,4 +131,176 @@ img {
   padding: 2rem;
   background: url("/img/1189123-bslf-small.jpg.rendition.380.380.jpg") no-repeat
     center center/cover;
+}
+
+.showcase img {
+  height: 100%;
+  width: 100vw;
+}
+
+.inspiration-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.tile {
+  border-radius: 10px;
+  margin: 0.5rem;
+  font-size: 2.5rem;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.6);
+  padding-top: 3rem;
+}
+
+.tile h3 {
+  color: #fff;
+}
+
+.tile img {
+  height: 100%;
+}
+
+.tile1 {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
+  background: url(/img/1193699-bslf-small.jpg.rendition.380.380.jpg) no-repeat
+    center center/cover;
+}
+
+.tile2 {
+  grid-column: 4 / span 3;
+  grid-row: 1 / span 3;
+  background: url(/img/1268647-zwitsal-baby-op-handdoek-naast-bad-small.jpg.rendition.380.380.jpg)
+    no-repeat center center/cover;
+}
+
+.tile3 {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 2;
+  background: url(/img/1189123-bslf-small.jpg.rendition.380.380.jpg) no-repeat
+    center center/cover;
+}
+
+.tile4 {
+  grid-column: 3 / span 2;
+  grid-row: 4 / span 2;
+  background: url(/img/1193127-bslf-small.jpg.rendition.380.380.jpg) no-repeat
+    center center/cover;
+}
+
+.tile5 {
+  grid-column: 5 / span 2;
+  grid-row: 4 / span 2;
+  background: url(/img/1346318-vandamm-post-7-1440x344-small.jpg.rendition.380.380.jpg)
+    no-repeat center center/cover;
+}
+
+.tile6 {
+  grid-column: 1 / span 2;
+  grid-row: 6 / span 2;
+  background: url(/img/1330666-zwitsal-luier-omdoen-1440x344px.jpg.rendition.380.380.jpg)
+    no-repeat center center/cover;
+}
+
+.tile7 {
+  grid-column: 3 / span 2;
+  grid-row: 6 / span 2;
+  background: url(/img/1193737-bslf.jpg.rendition.380.380.jpg) no-repeat center
+    center/cover;
+}
+
+.tile8 {
+  grid-column: 5 / span 2;
+  grid-row: 6 / span 2;
+  background: url(/img/1541096-zwitsal-baby-op-schouder-vader-mg0-3556.png.rendition.380.380.png.webp)
+    no-repeat center center/cover;
+}
+
+.tile9 {
+  grid-column: 3 / span 2;
+  grid-row: 8 / span 2;
+  background: url(/img/1268702-zwitsal-peuter-op-toilet.jpg.rendition.380.380.jpg)
+    no-repeat center center/cover;
+}
+
+.inspiration a {
+  color: #ea5635;
+}
+
+.gift-set {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #fdfbdf;
+}
+
+.gift-set-content {
+  display: inline-block;
+  text-align: left;
+  margin: 2rem;
+}
+
+.gift-set-content p {
+  margin-bottom: 2rem;
+}
+
+.gift-set2 {
+  display: flex;
+}
+
+.gift-set2 h2 {
+  grid-column: 1 / span 4;
+}
+
+.card1 img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.newsletter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #fdfbdf;
+}
+
+.newsletter-content {
+  display: inline-block;
+  text-align: left;
+  margin: 2rem;
+}
+
+.newsletter-content p {
+  margin-bottom: 2rem;
+}
+
+.baby-names {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #fff;
+}
+
+.baby-names-content {
+  display: inline-block;
+  text-align: left;
+  margin: 2rem;
+}
+
+.baby-names-content p {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #f6f6f6;
+  font-family: "Open Sans";
+}
+
+.footer h3 {
+  color: #ea5635;
+}
+
+.footer-links {
+  display: flex;
 }
